@@ -186,3 +186,12 @@ public class Tester {
 
 Määrittele <code>FirefoxDriver</code> vastaavalla tavalla testeissä.
  
+### Fuksiläppärissä ongelmia
+
+Fuksiläppäristä voi puuttua chromium-chromedriver. Tämän huomaat, jos saat virheilmoituksen, joka näyttää tältä:
+
+    Exception in thread "main" java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver.
+
+Ongelmaan auttaa chromium-chromedriverin asentaminen komentoriviltä komennolla (tarvitset sudo-oikeudet):
+
+    sudo apt-get install chromium-chromedriver
